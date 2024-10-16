@@ -1,0 +1,11 @@
+08:57:52 **** Incremental Build of configuration Debug for project STMInwza007 ****
+make -j12 all 
+arm-none-eabi-gcc -o "STMInwza007.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\2year2\RMX\stm\STM32Test\forSTM\STMInwza007\STMInwza007\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMInwza007.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/STM32IDE/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Startup/startup_stm32g474retx.o: in function `Reset_Handler':
+D:/2year2/RMX/stm/STM32Test/forSTM/STMInwza007/STMInwza007/Debug/../Core/Startup/startup_stm32g474retx.s:101: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: STMInwza007.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+08:57:53 Build Failed. 2 errors, 0 warnings. (took 1s.342ms)
+

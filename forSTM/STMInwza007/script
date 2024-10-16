@@ -1,0 +1,10 @@
+config load "D:\2year2\RMX\stm\STM32Test\forSTM\STMInwza007\STMInwza007.ioc"
+project toolchain STM32CubeIDE
+
+SetStructure Advanced
+
+project setCustomFWPath "D:\STM32IDE\forfirmware\STM32Cube_FW_G4_V1.5.0"
+
+project generate 
+
+exit wait
